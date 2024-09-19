@@ -19,9 +19,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kIy-8J-0iI" customClass="LottieAnimationView" customModule="Lottie">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="SplashLottie"/>
-                                </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -33,9 +30,6 @@
                             <constraint firstAttribute="bottom" secondItem="kIy-8J-0iI" secondAttribute="bottom" id="w6z-Ou-KD4"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="lottieAnimatiionView" destination="kIy-8J-0iI" id="BLd-z1-ibH"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
