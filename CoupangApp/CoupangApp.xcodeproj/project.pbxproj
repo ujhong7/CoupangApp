@@ -13,10 +13,10 @@
 		1D4C3B6C2C9C698700E0C1DE /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C3B6B2C9C698700E0C1DE /* Colors.xcassets */; };
 		1D4C3B6E2C9C6A3C00E0C1DE /* CPColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C3B6D2C9C6A3C00E0C1DE /* CPColor.swift */; };
 		1D4C3B702C9C742400E0C1DE /* CPFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C3B6F2C9C742400E0C1DE /* CPFont.swift */; };
+		1D4C3B722C9D1B6200E0C1DE /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C3B712C9D1B6200E0C1DE /* Home.storyboard */; };
+		1D4C3B742C9D1B7D00E0C1DE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C3B732C9D1B7D00E0C1DE /* HomeViewController.swift */; };
 		1DB09A2D2C9BFCC3002C02BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB09A2C2C9BFCC3002C02BD /* AppDelegate.swift */; };
 		1DB09A2F2C9BFCC3002C02BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB09A2E2C9BFCC3002C02BD /* SceneDelegate.swift */; };
-		1DB09A312C9BFCC3002C02BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB09A302C9BFCC3002C02BD /* ViewController.swift */; };
-		1DB09A342C9BFCC3002C02BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1DB09A332C9BFCC3002C02BD /* Base */; };
 		1DB09A362C9BFCC4002C02BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DB09A352C9BFCC4002C02BD /* Assets.xcassets */; };
 		1DB09A392C9BFCC4002C02BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1DB09A382C9BFCC4002C02BD /* Base */; };
 		1DB09A412C9BFF35002C02BD /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB09A402C9BFF35002C02BD /* Splash.storyboard */; };
@@ -29,11 +29,11 @@
 		1D4C3B6B2C9C698700E0C1DE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		1D4C3B6D2C9C6A3C00E0C1DE /* CPColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPColor.swift; sourceTree = "<group>"; };
 		1D4C3B6F2C9C742400E0C1DE /* CPFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPFont.swift; sourceTree = "<group>"; };
+		1D4C3B712C9D1B6200E0C1DE /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		1D4C3B732C9D1B7D00E0C1DE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1DB09A292C9BFCC3002C02BD /* CoupangApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoupangApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DB09A2C2C9BFCC3002C02BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1DB09A2E2C9BFCC3002C02BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1DB09A302C9BFCC3002C02BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1DB09A332C9BFCC3002C02BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1DB09A352C9BFCC4002C02BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DB09A382C9BFCC4002C02BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1DB09A3A2C9BFCC4002C02BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -87,13 +87,13 @@
 				1D4C3B662C9C648200E0C1DE /* DesignSource */,
 				1DB09A2C2C9BFCC3002C02BD /* AppDelegate.swift */,
 				1DB09A2E2C9BFCC3002C02BD /* SceneDelegate.swift */,
-				1DB09A302C9BFCC3002C02BD /* ViewController.swift */,
-				1DB09A322C9BFCC3002C02BD /* Main.storyboard */,
 				1DB09A352C9BFCC4002C02BD /* Assets.xcassets */,
 				1DB09A372C9BFCC4002C02BD /* LaunchScreen.storyboard */,
 				1DB09A3A2C9BFCC4002C02BD /* Info.plist */,
 				1DB09A402C9BFF35002C02BD /* Splash.storyboard */,
 				1DB09A422C9BFF7D002C02BD /* SplashViewController.swift */,
+				1D4C3B712C9D1B6200E0C1DE /* Home.storyboard */,
+				1D4C3B732C9D1B7D00E0C1DE /* HomeViewController.swift */,
 			);
 			path = CoupangApp;
 			sourceTree = "<group>";
@@ -162,11 +162,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D4C3B722C9D1B6200E0C1DE /* Home.storyboard in Resources */,
 				1DB09A362C9BFCC4002C02BD /* Assets.xcassets in Resources */,
 				1D4C3B682C9C64CA00E0C1DE /* Images.xcassets in Resources */,
 				1DB09A392C9BFCC4002C02BD /* Base in Resources */,
 				1D4C3B6C2C9C698700E0C1DE /* Colors.xcassets in Resources */,
-				1DB09A342C9BFCC3002C02BD /* Base in Resources */,
 				1DB09A412C9BFF35002C02BD /* Splash.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -179,8 +179,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D4C3B6E2C9C6A3C00E0C1DE /* CPColor.swift in Sources */,
-				1DB09A312C9BFCC3002C02BD /* ViewController.swift in Sources */,
 				1DB09A2D2C9BFCC3002C02BD /* AppDelegate.swift in Sources */,
+				1D4C3B742C9D1B7D00E0C1DE /* HomeViewController.swift in Sources */,
 				1D4C3B702C9C742400E0C1DE /* CPFont.swift in Sources */,
 				1DB09A2F2C9BFCC3002C02BD /* SceneDelegate.swift in Sources */,
 				1DB09A432C9BFF7D002C02BD /* SplashViewController.swift in Sources */,
@@ -191,14 +191,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1DB09A322C9BFCC3002C02BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1DB09A332C9BFCC3002C02BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1DB09A372C9BFCC4002C02BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

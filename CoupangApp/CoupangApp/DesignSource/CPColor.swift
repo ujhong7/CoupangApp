@@ -16,13 +16,15 @@ enum CPColor {
     static var keyColorRed2: UIColor = UIColor(named: "key-color-red-2")!
     static var keyColorBlue: UIColor = UIColor(named: "key-color-blue")!
     static var keyColorBlueTrans: UIColor = UIColor(named: "key-color-blue-trans")!
+    
     static var keyColorGreen: UIColor = UIColor(named: "key-color-green")!
-    static var keyColorGrey0: UIColor = UIColor(named: "key-color-grey-0")!
-    static var keyColorGrey1: UIColor = UIColor(named: "key-color-grey-1")!
-    static var keyColorGrey2: UIColor = UIColor(named: "key-color-grey-2")!
-    static var keyColorGrey3: UIColor = UIColor(named: "key-color-grey-3")!
-    static var keyColorGrey4: UIColor = UIColor(named: "key-color-grey-4")!
-    static var keyColorGrey5: UIColor = UIColor(named: "key-color-grey-5")!
-    static var keyColorGrey6: UIColor = UIColor(named: "key-color-grey-6")!
-    static var keyColorGrey7: UIColor = UIColor(named: "key-color-grey-7")!
+    static var gray0: UIColor = UIColor(named: "gray-0")!
+    static var gray1: UIColor = UIColor(named: "gray-1")!
+    static var gray2: UIColor = UIColor(named: "gray-2")!
+    static var gray3: UIColor = UIColor(named: "gray-3")!
+    static var gray3Cool: UIColor = UIColor(named: "gray-4")!
+    static var gray4: UIColor = UIColor(named: "gray-5")!
+    static var gray5: UIColor = UIColor(named: "gray-6")!
+    static var gray7: UIColor = UIColor(named: "gray-7")!
+//    static var gray3Cool: UIColor = UIColor(named: "gray-3-cool")!
 }
