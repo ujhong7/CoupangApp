@@ -56,6 +56,7 @@
 		1D4C3B662C9C648200E0C1DE /* DesignSource */ = {
 			isa = PBXGroup;
 			children = (
+				1DB09A352C9BFCC4002C02BD /* Assets.xcassets */,
 				1D4C3B672C9C64CA00E0C1DE /* Images.xcassets */,
 				1D4C3B692C9C663800E0C1DE /* CPImages.swift */,
 				1D4C3B6B2C9C698700E0C1DE /* Colors.xcassets */,
@@ -63,6 +64,44 @@
 				1D4C3B6F2C9C742400E0C1DE /* CPFont.swift */,
 			);
 			path = DesignSource;
+			sourceTree = "<group>";
+		};
+		1D4C3B752C9D25AA00E0C1DE /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				1D4C3B782C9D25BF00E0C1DE /* Delegates */,
+				1D4C3B762C9D25B400E0C1DE /* Splash */,
+				1D4C3B772C9D25BA00E0C1DE /* Home */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		1D4C3B762C9D25B400E0C1DE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				1DB09A372C9BFCC4002C02BD /* LaunchScreen.storyboard */,
+				1DB09A402C9BFF35002C02BD /* Splash.storyboard */,
+				1DB09A422C9BFF7D002C02BD /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		1D4C3B772C9D25BA00E0C1DE /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1D4C3B712C9D1B6200E0C1DE /* Home.storyboard */,
+				1D4C3B732C9D1B7D00E0C1DE /* HomeViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1D4C3B782C9D25BF00E0C1DE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				1DB09A2C2C9BFCC3002C02BD /* AppDelegate.swift */,
+				1DB09A2E2C9BFCC3002C02BD /* SceneDelegate.swift */,
+			);
+			path = Delegates;
 			sourceTree = "<group>";
 		};
 		1DB09A202C9BFCC3002C02BD = {
@@ -84,16 +123,9 @@
 		1DB09A2B2C9BFCC3002C02BD /* CoupangApp */ = {
 			isa = PBXGroup;
 			children = (
+				1D4C3B752C9D25AA00E0C1DE /* Feature */,
 				1D4C3B662C9C648200E0C1DE /* DesignSource */,
-				1DB09A2C2C9BFCC3002C02BD /* AppDelegate.swift */,
-				1DB09A2E2C9BFCC3002C02BD /* SceneDelegate.swift */,
-				1DB09A352C9BFCC4002C02BD /* Assets.xcassets */,
-				1DB09A372C9BFCC4002C02BD /* LaunchScreen.storyboard */,
 				1DB09A3A2C9BFCC4002C02BD /* Info.plist */,
-				1DB09A402C9BFF35002C02BD /* Splash.storyboard */,
-				1DB09A422C9BFF7D002C02BD /* SplashViewController.swift */,
-				1D4C3B712C9D1B6200E0C1DE /* Home.storyboard */,
-				1D4C3B732C9D1B7D00E0C1DE /* HomeViewController.swift */,
 			);
 			path = CoupangApp;
 			sourceTree = "<group>";
