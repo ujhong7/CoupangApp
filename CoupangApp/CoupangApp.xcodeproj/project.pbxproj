@@ -94,8 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				1D4C3B712C9D1B6200E0C1DE /* Home.storyboard */,
-				1D4C3B792C9D2D7900E0C1DE /* HomeBannerCollectionViewCell.swift */,
 				1D4C3B732C9D1B7D00E0C1DE /* HomeViewController.swift */,
+				1D4C3B792C9D2D7900E0C1DE /* HomeBannerCollectionViewCell.swift */,
 				1D4C3B7B2C9D781900E0C1DE /* HomeProductCollectionViewCell.swift */,
 			);
 			path = Home;

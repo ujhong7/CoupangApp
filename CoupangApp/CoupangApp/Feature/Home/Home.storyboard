@@ -48,7 +48,7 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="393" height="248"/>
                                         <connections>
-                                            <outlet property="ImageView" destination="1hf-5O-mhK" id="7tg-SO-XSV"/>
+                                            <outlet property="imageView" destination="1hf-5O-mhK" id="7tg-SO-XSV"/>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeProductCollectionViewCell" id="rto-ng-yU1" customClass="HomeProductCollectionViewCell" customModule="CoupangApp" customModuleProvider="target">
@@ -116,6 +116,13 @@
                                                 <constraint firstAttribute="bottom" secondItem="zuk-qM-BKD" secondAttribute="bottom" id="qhb-p2-Vim"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="discountPriceLabel" destination="0yh-uc-lfm" id="rM4-ny-Mxg"/>
+                                            <outlet property="originalPriceLabel" destination="bBo-mc-EI7" id="PdT-HK-iYT"/>
+                                            <outlet property="productItemImageView" destination="dfE-CG-cub" id="pnP-7b-ac8"/>
+                                            <outlet property="productReasonDiscountLabel" destination="W6D-IG-0dG" id="BTO-dU-LZP"/>
+                                            <outlet property="productTitleLabel" destination="dqW-Ow-jeh" id="llc-w2-u1C"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
