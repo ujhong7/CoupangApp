@@ -24,6 +24,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        loadData()
         setDataSource()
         applySnapShot()
         
@@ -42,6 +43,10 @@ class HomeViewController: UIViewController {
             case .none: return nil
             }
         }
+    }
+    
+    private func loadData() {
+        
     }
     
     private func setDataSource() {
