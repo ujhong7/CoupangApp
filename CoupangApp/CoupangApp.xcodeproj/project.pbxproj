@@ -93,10 +93,9 @@
 		1D4C3B772C9D25BA00E0C1DE /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				1D4C3B7D2CA1ADD900E0C1DE /* View */,
 				1D4C3B712C9D1B6200E0C1DE /* Home.storyboard */,
 				1D4C3B732C9D1B7D00E0C1DE /* HomeViewController.swift */,
-				1D4C3B792C9D2D7900E0C1DE /* HomeBannerCollectionViewCell.swift */,
-				1D4C3B7B2C9D781900E0C1DE /* HomeProductCollectionViewCell.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -108,6 +107,15 @@
 				1DB09A2E2C9BFCC3002C02BD /* SceneDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		1D4C3B7D2CA1ADD900E0C1DE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D4C3B792C9D2D7900E0C1DE /* HomeBannerCollectionViewCell.swift */,
+				1D4C3B7B2C9D781900E0C1DE /* HomeProductCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1DB09A202C9BFCC3002C02BD = {
