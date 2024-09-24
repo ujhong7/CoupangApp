@@ -11,7 +11,7 @@ class NetworkService {
     static let shared: NetworkService = NetworkService()
     
     func getHomeData() async throws -> HomeResponse {
-        let urlString = ""
+        let urlString = "https://my-json-server.typicode.com/JeaSungLEE/JsonAPIFastCampus/db"
         guard let url = URL(string: urlString) else { throw URLError(.badURL) }
         
         let (data, response) = try await URLSession.shared.data(from: url)
