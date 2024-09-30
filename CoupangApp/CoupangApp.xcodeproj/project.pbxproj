@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D02448B2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02448A2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift */; };
+		1D02448E2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02448D2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift */; };
 		1D4C3B652C9C615E00E0C1DE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1D4C3B642C9C615E00E0C1DE /* Lottie */; };
 		1D4C3B682C9C64CA00E0C1DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C3B672C9C64CA00E0C1DE /* Images.xcassets */; };
 		1D4C3B6A2C9C663800E0C1DE /* CPImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C3B692C9C663800E0C1DE /* CPImages.swift */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D02448A2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCouponButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D02448D2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSeperateLineCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D4C3B672C9C64CA00E0C1DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1D4C3B692C9C663800E0C1DE /* CPImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPImages.swift; sourceTree = "<group>"; };
 		1D4C3B6B2C9C698700E0C1DE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -125,6 +129,8 @@
 			children = (
 				1D4C3B792C9D2D7900E0C1DE /* HomeBannerCollectionViewCell.swift */,
 				1D4C3B7B2C9D781900E0C1DE /* HomeProductCollectionViewCell.swift */,
+				1D02448A2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift */,
+				1D02448D2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -266,9 +272,11 @@
 			files = (
 				1D4C3B802CA1C08B00E0C1DE /* NetworkService.swift in Sources */,
 				1D4C3B6E2C9C6A3C00E0C1DE /* CPColor.swift in Sources */,
+				1D02448E2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift in Sources */,
 				1D4C3B7C2C9D781900E0C1DE /* HomeProductCollectionViewCell.swift in Sources */,
 				1DB09A2D2C9BFCC3002C02BD /* AppDelegate.swift in Sources */,
 				1D7719102CA2F756001A3EC3 /* Numeric+Extension.swift in Sources */,
+				1D02448B2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift in Sources */,
 				1D4C3B742C9D1B7D00E0C1DE /* HomeViewController.swift in Sources */,
 				1D4C3B702C9C742400E0C1DE /* CPFont.swift in Sources */,
 				1DB09A2F2C9BFCC3002C02BD /* SceneDelegate.swift in Sources */,
