@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1D02448B2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02448A2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift */; };
 		1D02448E2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02448D2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift */; };
+		1D0244902CAA94D600650293 /* HomeThemeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02448F2CAA94D600650293 /* HomeThemeCollectionViewCell.swift */; };
+		1D0244922CAB0A6100650293 /* HomeThemeHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0244912CAB0A6100650293 /* HomeThemeHeaderCollectionReusableView.swift */; };
 		1D4C3B652C9C615E00E0C1DE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1D4C3B642C9C615E00E0C1DE /* Lottie */; };
 		1D4C3B682C9C64CA00E0C1DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C3B672C9C64CA00E0C1DE /* Images.xcassets */; };
 		1D4C3B6A2C9C663800E0C1DE /* CPImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C3B692C9C663800E0C1DE /* CPImages.swift */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		1D02448A2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCouponButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		1D02448D2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSeperateLineCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D02448F2CAA94D600650293 /* HomeThemeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThemeCollectionViewCell.swift; sourceTree = "<group>"; };
+		1D0244912CAB0A6100650293 /* HomeThemeHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThemeHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
 		1D4C3B672C9C64CA00E0C1DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1D4C3B692C9C663800E0C1DE /* CPImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPImages.swift; sourceTree = "<group>"; };
 		1D4C3B6B2C9C698700E0C1DE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				1D4C3B7B2C9D781900E0C1DE /* HomeProductCollectionViewCell.swift */,
 				1D02448A2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift */,
 				1D02448D2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift */,
+				1D02448F2CAA94D600650293 /* HomeThemeCollectionViewCell.swift */,
+				1D0244912CAB0A6100650293 /* HomeThemeHeaderCollectionReusableView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				1D02448E2CAA8D5C00650293 /* HomeSeperateLineCollectionViewCell.swift in Sources */,
 				1D4C3B7C2C9D781900E0C1DE /* HomeProductCollectionViewCell.swift in Sources */,
 				1DB09A2D2C9BFCC3002C02BD /* AppDelegate.swift in Sources */,
+				1D0244922CAB0A6100650293 /* HomeThemeHeaderCollectionReusableView.swift in Sources */,
 				1D7719102CA2F756001A3EC3 /* Numeric+Extension.swift in Sources */,
 				1D02448B2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift in Sources */,
 				1D4C3B742C9D1B7D00E0C1DE /* HomeViewController.swift in Sources */,
@@ -283,6 +290,7 @@
 				1D77190D2CA26EB9001A3EC3 /* HomeViewModel.swift in Sources */,
 				1DB09A432C9BFF7D002C02BD /* SplashViewController.swift in Sources */,
 				1D4C3B6A2C9C663800E0C1DE /* CPImages.swift in Sources */,
+				1D0244902CAA94D600650293 /* HomeThemeCollectionViewCell.swift in Sources */,
 				1D4C3B7A2C9D2D7900E0C1DE /* HomeBannerCollectionViewCell.swift in Sources */,
 				1D4C3B832CA1C20C00E0C1DE /* HomeResponse.swift in Sources */,
 			);

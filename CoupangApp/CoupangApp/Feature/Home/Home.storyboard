@@ -23,13 +23,13 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KiQ-cZ-HJp">
                                     <size key="itemSize" width="393" height="248"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="107"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeBannerCollectionViewCell" id="86C-Sb-ATx" customClass="HomeBannerCollectionViewCell" customModule="CoupangApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="141" height="148"/>
+                                        <rect key="frame" x="0.0" y="135" width="141" height="148"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="F33-CN-GFn">
                                             <rect key="frame" x="0.0" y="0.0" width="141" height="148"/>
@@ -52,7 +52,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeProductCollectionViewCell" id="rto-ng-yU1" customClass="HomeProductCollectionViewCell" customModule="CoupangApp" customModuleProvider="target">
-                                        <rect key="frame" x="272" y="0.0" width="121" height="204"/>
+                                        <rect key="frame" x="272" y="107" width="121" height="204"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="eJi-bi-XdN">
                                             <rect key="frame" x="0.0" y="0.0" width="121" height="204"/>
@@ -126,7 +126,7 @@
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeSeperateLineCollectionViewCell" id="dfq-zw-3AS" customClass="HomeSeperateLineCollectionViewCell" customModule="CoupangApp" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="214" width="227" height="174"/>
+                                        <rect key="frame" x="83" y="321" width="227" height="174"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qJP-D3-6bT">
                                             <rect key="frame" x="0.0" y="0.0" width="227" height="174"/>
@@ -134,8 +134,31 @@
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="227" height="174"/>
                                     </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeThemeCollectionViewCell" id="Gg1-bX-CVe" customClass="HomeThemeCollectionViewCell" customModule="CoupangApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="505" width="165" height="138"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bOC-Jm-j1Q">
+                                            <rect key="frame" x="0.0" y="0.0" width="165" height="138"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1zI-OG-imT">
+                                                    <rect key="frame" x="0.0" y="0.0" width="165" height="138"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="1zI-OG-imT" firstAttribute="leading" secondItem="bOC-Jm-j1Q" secondAttribute="leading" id="ExM-OV-SXo"/>
+                                                <constraint firstItem="1zI-OG-imT" firstAttribute="top" secondItem="bOC-Jm-j1Q" secondAttribute="top" id="Oat-0Q-qvq"/>
+                                                <constraint firstAttribute="bottom" secondItem="1zI-OG-imT" secondAttribute="bottom" id="Y18-A2-tgA"/>
+                                                <constraint firstAttribute="trailing" secondItem="1zI-OG-imT" secondAttribute="trailing" id="hlv-kA-Inj"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="165" height="138"/>
+                                        <connections>
+                                            <outlet property="themeImageView" destination="1zI-OG-imT" id="dBv-df-3a0"/>
+                                        </connections>
+                                    </collectionViewCell>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeCouponButtonCollectionViewCell" id="3HU-Yq-1bN" customClass="HomeCouponButtonCollectionViewCell" customModule="CoupangApp" customModuleProvider="target">
-                                        <rect key="frame" x="237" y="294" width="24" height="14"/>
+                                        <rect key="frame" x="175" y="567" width="24" height="14"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="80e-pM-poR">
                                             <rect key="frame" x="0.0" y="0.0" width="24" height="14"/>
@@ -162,6 +185,27 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeThemeHeaderCollectionReusableView" id="s0G-gY-UMp" customClass="HomeThemeHeaderCollectionReusableView" customModule="CoupangApp" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="107"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ncE-9w-sWR">
+                                            <rect key="frame" x="30" y="23" width="333" height="84"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                            <color key="textColor" name="bk"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="ncE-9w-sWR" secondAttribute="bottom" id="C2M-Mx-mSK"/>
+                                        <constraint firstAttribute="trailing" secondItem="ncE-9w-sWR" secondAttribute="trailing" constant="30" id="So2-QK-5hJ"/>
+                                        <constraint firstItem="ncE-9w-sWR" firstAttribute="leading" secondItem="s0G-gY-UMp" secondAttribute="leading" constant="30" id="adK-Uo-nMA"/>
+                                        <constraint firstItem="ncE-9w-sWR" firstAttribute="top" secondItem="s0G-gY-UMp" secondAttribute="top" constant="23" id="qEU-h7-HNd"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="themeHeaderLabel" destination="ncE-9w-sWR" id="zw3-Zn-g08"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

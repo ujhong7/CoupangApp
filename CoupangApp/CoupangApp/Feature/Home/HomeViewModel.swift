@@ -27,6 +27,7 @@ final class HomeViewModel {
             var couponState: [HomeCouponButtonCollectionViewCellViewModel]?
             var seperateLine1ViewModels: [HomeSeperateLineCollectionViewCellViewModel] = [HomeSeperateLineCollectionViewCellViewModel()]
             var seperateLine2ViewModels: [HomeSeperateLineCollectionViewCellViewModel] = [HomeSeperateLineCollectionViewCellViewModel()]
+            var themeViewModels: (headerViewModel: HomeThemeHeaderCollectionReusableViewModel, items: [HomeThemeCollectionViewCellViewModel])?
         }
         @Published var collectionViewModels: CollectionViewModels = CollectionViewModels()
     }
@@ -80,6 +81,7 @@ extension HomeViewModel {
         Task { await transformBanner(response) }
         Task { await transformHorizontalProduct(response) }
         Task { await transformVerticalProduct(response) }
+        Task { await transformTheme(response) }
     }
     
     @MainActor
@@ -99,6 +101,19 @@ extension HomeViewModel {
         state.collectionViewModels.verticalProductViewModels = productToHomeProductCollectionViewCellViewModel(response.verticalProducts)
     }
     
+    @MainActor
+    private func transformTheme(_ response: HomeResponse) async {
+        let items = response.themes.map {
+            HomeThemeCollectionViewCellViewModel(themeImageUrl: $0.imageUrl)
+        }
+        state.collectionViewModels.themeViewModels = (HomeThemeHeaderCollectionReusableViewModel(headerText: "테마관"), items)
+    }
+    
+    @MainActor
+    private func transformCoupon(_ isDownloaded: Bool) async {
+        state.collectionViewModels.couponState = [.init(state: isDownloaded ? .disable : .enable)]
+    }
+    
     private func productToHomeProductCollectionViewCellViewModel(_ product: [Product]) -> [HomeProductCollectionViewCellViewModel] {
         return product.map {
             HomeProductCollectionViewCellViewModel(imageUrlString: $0.imageUrl,
@@ -107,11 +122,6 @@ extension HomeViewModel {
                                                    originalPrice: $0.originalPrice.moneyString,
                                                    discountPrice: $0.discountPrice.moneyString)
         }
-    }
-    
-    @MainActor
-    private func transformCoupon(_ isDownloaded: Bool) async {
-        state.collectionViewModels.couponState = [.init(state: isDownloaded ? .disable : .enable)]
     }
     
     private func downloadCoupon() {
