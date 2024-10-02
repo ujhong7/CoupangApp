@@ -6,10 +6,9 @@
 //
 
 import Foundation
-import Combine
 
 final class FavoriteViewModel {
-     
+    
     enum Action {
         case getFavoriteFromAPI
         case getFavoriteSuccess(FavoriteResponse)
@@ -18,7 +17,7 @@ final class FavoriteViewModel {
     }
     
     final class State {
-        @Published var tableViewModel: [String]?
+        @Published var tableViewModel: [FavoriteItemTableViewCellViewModel]?
     }
     
     private(set) var state: State = State()
@@ -26,14 +25,39 @@ final class FavoriteViewModel {
     func process(_ action: Action) {
         switch action {
         case .getFavoriteFromAPI:
-            break
+            getFavoriteFromAPI()
         case .getFavoriteSuccess(let favoriteResponse):
-            break
+            print(favoriteResponse)
+            translateFavoriteItemViewModel(favoriteResponse)
         case .getFavoriteFailure(let error):
-            break
+            print(error)
         case .didTapPurchaseButton:
             break
         }
     }
     
+}
+
+extension FavoriteViewModel {
+    
+    private func getFavoriteFromAPI() {
+        Task {
+            do {
+                let response = try await NetworkService.shared.getFavoriteData()
+                print(response)
+                process(.getFavoriteSuccess(response))
+            } catch {
+                process(.getFavoriteFailure(error))
+            }
+            
+        }
+    }
+    
+    private func translateFavoriteItemViewModel(_ response: FavoriteResponse) {
+        state.tableViewModel = response.favorites.map {
+            FavoriteItemTableViewCellViewModel(imageUrl: $0.imageUrl,
+                                               productName: $0.title,
+                                               productPrice: $0.discountPrice.moneyString)
+        }
+    }
 }

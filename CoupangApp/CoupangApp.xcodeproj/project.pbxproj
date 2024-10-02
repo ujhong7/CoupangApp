@@ -16,6 +16,8 @@
 		1D0244992CACF1F000650293 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0244982CACF1F000650293 /* FavoriteViewModel.swift */; };
 		1D02449B2CACF61A00650293 /* FavoriteResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02449A2CACF61A00650293 /* FavoriteResponse.swift */; };
 		1D02449D2CACF67800650293 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02449C2CACF67800650293 /* Product.swift */; };
+		1D0244A02CACFCDF00650293 /* PurchaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D02449F2CACFCDF00650293 /* PurchaseButton.swift */; };
+		1D0244A42CAD05D200650293 /* FavoriteItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0244A32CAD05D200650293 /* FavoriteItemTableViewCell.swift */; };
 		1D4C3B652C9C615E00E0C1DE /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 1D4C3B642C9C615E00E0C1DE /* Lottie */; };
 		1D4C3B682C9C64CA00E0C1DE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1D4C3B672C9C64CA00E0C1DE /* Images.xcassets */; };
 		1D4C3B6A2C9C663800E0C1DE /* CPImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D4C3B692C9C663800E0C1DE /* CPImages.swift */; };
@@ -49,6 +51,8 @@
 		1D0244982CACF1F000650293 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 		1D02449A2CACF61A00650293 /* FavoriteResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteResponse.swift; sourceTree = "<group>"; };
 		1D02449C2CACF67800650293 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1D02449F2CACFCDF00650293 /* PurchaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseButton.swift; sourceTree = "<group>"; };
+		1D0244A32CAD05D200650293 /* FavoriteItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteItemTableViewCell.swift; sourceTree = "<group>"; };
 		1D4C3B672C9C64CA00E0C1DE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1D4C3B692C9C663800E0C1DE /* CPImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPImages.swift; sourceTree = "<group>"; };
 		1D4C3B6B2C9C698700E0C1DE /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -88,11 +92,21 @@
 		1D0244932CACF18E00650293 /* Favorite */ = {
 			isa = PBXGroup;
 			children = (
+				1D02449E2CACFCC000650293 /* View */,
 				1D0244942CACF1BA00650293 /* Favorite.storyboard */,
 				1D0244962CACF1D800650293 /* FavoriteViewController.swift */,
 				1D0244982CACF1F000650293 /* FavoriteViewModel.swift */,
 			);
 			path = Favorite;
+			sourceTree = "<group>";
+		};
+		1D02449E2CACFCC000650293 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1D02449F2CACFCDF00650293 /* PurchaseButton.swift */,
+				1D0244A32CAD05D200650293 /* FavoriteItemTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1D4C3B662C9C648200E0C1DE /* DesignSource */ = {
@@ -307,9 +321,11 @@
 				1D0244972CACF1D800650293 /* FavoriteViewController.swift in Sources */,
 				1DB09A2D2C9BFCC3002C02BD /* AppDelegate.swift in Sources */,
 				1D0244922CAB0A6100650293 /* HomeThemeHeaderCollectionReusableView.swift in Sources */,
+				1D0244A42CAD05D200650293 /* FavoriteItemTableViewCell.swift in Sources */,
 				1D0244992CACF1F000650293 /* FavoriteViewModel.swift in Sources */,
 				1D7719102CA2F756001A3EC3 /* Numeric+Extension.swift in Sources */,
 				1D02448B2CA9ADC300650293 /* HomeCouponButtonCollectionViewCell.swift in Sources */,
+				1D0244A02CACFCDF00650293 /* PurchaseButton.swift in Sources */,
 				1D4C3B742C9D1B7D00E0C1DE /* HomeViewController.swift in Sources */,
 				1D4C3B702C9C742400E0C1DE /* CPFont.swift in Sources */,
 				1DB09A2F2C9BFCC3002C02BD /* SceneDelegate.swift in Sources */,
