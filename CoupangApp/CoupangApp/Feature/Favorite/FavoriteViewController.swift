@@ -61,6 +61,7 @@ final class FavoriteViewController: UIViewController {
     private func favoriteCell(_ tableView: UITableView, _ indexPath: IndexPath, _ viewModel: AnyHashable) -> UITableViewCell? {
         guard let viewModel = viewModel as? FavoriteItemTableViewCellViewModel,
               let cell = tableView.dequeueReusableCell(withIdentifier: FavoriteItemTableViewCell.reusableId, for: indexPath) as? FavoriteItemTableViewCell else { return nil }
+        cell.setViewModel(viewModel)
         return cell
     }
     
