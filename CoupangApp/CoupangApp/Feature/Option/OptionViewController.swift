@@ -1,25 +1,22 @@
 //
-//  DetailViewController.swift
+//  OptionViewController.swift
 //  CoupangApp
 //
 //  Created by yujaehong on 12/11/24.
 //
 
-import Combine
 import UIKit
 import SwiftUI
 
-final class DetailViewController: UIViewController {
+final class OptionViewController: UIViewController {
 
-    let viewModel: DetailViewModel = DetailViewModel()
-    lazy var rootView: UIHostingController = UIHostingController(rootView: DetailRootView(viewModel: viewModel))
-    private var cancellables: Set<AnyCancellable> = []
+    let viewModel: OptionViewModel = OptionViewModel()
+    lazy var rootView: UIHostingController = UIHostingController(rootView: OptionRootView(viewModel: viewModel))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         addRootView()
-        bindViewModelAction()
     }
     
     private func addRootView() {
@@ -33,16 +30,6 @@ final class DetailViewController: UIViewController {
             rootView.view.trailingAnchor.constraint(equalTo: view.trailingAnchor),
             rootView.view.bottomAnchor.constraint(equalTo: view.bottomAnchor)
         ])
-    }
-    
-    private func bindViewModelAction() {
-        viewModel.showOptionViewController
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] _ in
-                let viewController = OptionViewController()
-                self?.navigationController?.pushViewController(viewController, animated: true)
-            }
-            .store(in: &cancellables)
     }
 
 }
