@@ -10,7 +10,7 @@ import Lottie
 
 class SplashViewController: UIViewController {
 
-    @IBOutlet weak var lottieAnimatiionView: LottieAnimationView!
+    @IBOutlet weak var lottieAnimationView: LottieAnimationView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,7 +23,7 @@ class SplashViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Home", bundle: nil)
         let viewController = storyboard.instantiateInitialViewController()
         
-        lottieAnimatiionView.play {  _ in
+        lottieAnimationView.play { _ in
             if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
                let window = windowScene.windows.first(where: { $0.isKeyWindow }) {
                 window.rootViewController = viewController
