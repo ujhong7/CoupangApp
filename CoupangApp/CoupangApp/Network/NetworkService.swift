@@ -37,6 +37,9 @@ class NetworkService {
             throw NetworkError.serverError(statusCode: httpResponse.statusCode)
         }
     }
+}
+
+extension NetworkService {
     
     func getHomeData() async throws -> HomeResponse {
         let url = try createURL(withPath: "/JsonAPIFastCampus/db")
