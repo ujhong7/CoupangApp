@@ -60,6 +60,7 @@
 		1DB09A392C9BFCC4002C02BD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 1DB09A382C9BFCC4002C02BD /* Base */; };
 		1DB09A412C9BFF35002C02BD /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1DB09A402C9BFF35002C02BD /* Splash.storyboard */; };
 		1DB09A432C9BFF7D002C02BD /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DB09A422C9BFF7D002C02BD /* SplashViewController.swift */; };
+		1DD76DC32D1139F8005318FF /* sort.json in Resources */ = {isa = PBXBuildFile; fileRef = 1DD76DC22D1139F8005318FF /* sort.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -116,6 +117,7 @@
 		1DB09A3A2C9BFCC4002C02BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DB09A402C9BFF35002C02BD /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
 		1DB09A422C9BFF7D002C02BD /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		1DD76DC22D1139F8005318FF /* sort.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sort.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,6 +339,7 @@
 				1D4C3B812CA1C1D200E0C1DE /* Model */,
 				1D4C3B752C9D25AA00E0C1DE /* Feature */,
 				1DB09A3A2C9BFCC4002C02BD /* Info.plist */,
+				1DD76DC22D1139F8005318FF /* sort.json */,
 				1D6193F32D1005A3003E4CD3 /* test.html */,
 			);
 			path = CoupangApp;
@@ -413,6 +416,7 @@
 				1D0244952CACF1BA00650293 /* Favorite.storyboard in Resources */,
 				1D6193DA2D09D5DB003E4CD3 /* Detail.storyboard in Resources */,
 				1D4C3B682C9C64CA00E0C1DE /* Images.xcassets in Resources */,
+				1DD76DC32D1139F8005318FF /* sort.json in Resources */,
 				1DB09A392C9BFCC4002C02BD /* Base in Resources */,
 				1D4C3B6C2C9C698700E0C1DE /* Colors.xcassets in Resources */,
 				1DB09A412C9BFF35002C02BD /* Splash.storyboard in Resources */,

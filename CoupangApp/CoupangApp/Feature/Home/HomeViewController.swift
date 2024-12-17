@@ -119,35 +119,61 @@ final class HomeViewController: UIViewController {
     private func applySnapShot() {
         var snapShot: Snapshot = Snapshot()
         
-        if let bannerViewModels = viewModel.state.collectionViewModels.bannerViewModels {
-            snapShot.appendSections([.banner])
-            snapShot.appendItems(bannerViewModels, toSection: .banner)
+        func setTheme() {
+            if let themeViewModels = viewModel.state.collectionViewModels.themeViewModels?.items {
+                snapShot.appendSections([.seperateLine2])
+                snapShot.appendItems(viewModel.state.collectionViewModels.seperateLine2ViewModels, toSection: .seperateLine2)
+                
+                snapShot.appendSections([.theme])
+                snapShot.appendItems(themeViewModels, toSection: .theme)
+            }
         }
         
-        if let horizontalProductViewModels = viewModel.state.collectionViewModels.horizontalProductViewModels {
-            snapShot.appendSections([.horizontalProductItem])
-            snapShot.appendItems(horizontalProductViewModels, toSection: .horizontalProductItem)
-            
-            snapShot.appendSections([.seperateLine1])
-            snapShot.appendItems(viewModel.state.collectionViewModels.seperateLine1ViewModels, toSection: .seperateLine1)
+        func setVerticalProduct() {
+            if let verticalProductViewModels = viewModel.state.collectionViewModels.verticalProductViewModels {
+                snapShot.appendSections([.verticalProductItem])
+                snapShot.appendItems(verticalProductViewModels, toSection: .verticalProductItem)
+            }
         }
         
-        if let couptonViewModels = viewModel.state.collectionViewModels.couponState {
-            snapShot.appendSections([.couponButton])
-            snapShot.appendItems(couptonViewModels, toSection: .couponButton)
+        func setCoupon() {
+            if let couptonViewModels = viewModel.state.collectionViewModels.couponState {
+                snapShot.appendSections([.couponButton])
+                snapShot.appendItems(couptonViewModels, toSection: .couponButton)
+            }
         }
         
-        if let verticalProductViewModels = viewModel.state.collectionViewModels.verticalProductViewModels {
-            snapShot.appendSections([.verticalProductItem])
-            snapShot.appendItems(verticalProductViewModels, toSection: .verticalProductItem)
+        func setHorizontalProduct() {
+            if let horizontalProductViewModels = viewModel.state.collectionViewModels.horizontalProductViewModels {
+                snapShot.appendSections([.horizontalProductItem])
+                snapShot.appendItems(horizontalProductViewModels, toSection: .horizontalProductItem)
+                
+                snapShot.appendSections([.seperateLine1])
+                snapShot.appendItems(viewModel.state.collectionViewModels.seperateLine1ViewModels, toSection: .seperateLine1)
+            }
         }
         
-        if let themeViewModels = viewModel.state.collectionViewModels.themeViewModels?.items {
-            snapShot.appendSections([.seperateLine2])
-            snapShot.appendItems(viewModel.state.collectionViewModels.seperateLine2ViewModels, toSection: .seperateLine2)
-            
-            snapShot.appendSections([.theme])
-            snapShot.appendItems(themeViewModels, toSection: .theme)
+        func setBanner() {
+            if let bannerViewModels = viewModel.state.collectionViewModels.bannerViewModels {
+                snapShot.appendSections([.banner])
+                snapShot.appendItems(bannerViewModels, toSection: .banner)
+            }
+        }
+        
+        viewModel.state.sort.forEach {
+            switch $0 {
+            case "banner":
+                setBanner()
+            case "horizontal":
+                setHorizontalProduct()
+            case "coupon":
+                setCoupon()
+            case "vertical":
+                setVerticalProduct()
+            case "theme":
+                setTheme()
+            default: break
+            }
         }
         
         dataSource.apply(snapShot)

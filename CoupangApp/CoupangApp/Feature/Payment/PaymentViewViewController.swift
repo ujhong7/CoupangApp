@@ -15,7 +15,7 @@ final class PaymentViewViewController: UIViewController {
     
     
     override func loadView() {
-        let contentController = WKUserContentController()
+        let contentController = WKUserContentController() // 앱, 웹 상호작용
         contentController.add(self, name: getMessageScriptName) // JavaScript 메시지 핸들러 등록
         
         let config = WKWebViewConfiguration()
